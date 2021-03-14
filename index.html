@@ -26,16 +26,47 @@
         padding: 0; 
         margin: 0; 
       }
+
+      #todo-container {
+        width: 100%; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start;
+        margin: 0; 
+        padding: 0; 
+        position: fixed; 
+        left: 70vw; 
+        top: 4.3vh; 
+      }
+      #todo {
+        color: white; 
+        text-decoration: none; 
+        text-transform: uppercase;
+        background: #0288d1; 
+        padding: 0.5em;
+        padding-top: 0.4em; 
+        padding-bottom: 0.4em; 
+        border: 1px solid #0288d1;
+        font-weight: 550; 
+        font-family: "Roboto", Arial;
+      }
+      #todo:hover {
+        /* text-decoration: underline; */ 
+      }
       
     </style>
   </head>
   <body>
     <main>
+      
         <iframe id="open-web-calendar" 
         src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fcold-pac.github.io%2Fcalendar%2Fbiomed.ics&amp;url=https%3A%2F%2Fcold-pac.github.io%2Fcalendar%2Fmedicine.ics&amp;url=https%3A%2F%2Fcold-pac.github.io%2Fcalendar%2Femed.ics&amp;url=https%3A%2F%2Fcold-pac.github.io%2Fcalendar%2Femail.ics&amp;css=.event%2C%20.dhx_cal_tab.active%2C%20.dhx_cal_tab.active%3Ahover%20%7Bbackground-color%3A%20Open%20Web%20Calendar%3B%7D%20.dhx_month_head%2C%20.dhx_cal_tab%2C%20.dhx_cal_today_button%20%7Bcolor%3A%20Open%20Web%20Calendar%3B%7D%20.dhx_cal_tab%2C%20.dhx_cal_tab.active%20%7Bborder-color%3A%20Open%20Web%20Calendar%3B%7D%0A&amp;loader="
         sandbox="allow-scripts allow-same-origin allow-top-navigation"
         allowTransparency="true" scrolling="no" 
         frameborder="0" height="600px" width="100%"></iframe>
+        <div id = "todo-container">
+          <a id = "todo" href="todo.html" target = "_blank">To Do</a>
+        </div>
     </main>
   </body>
 </html>
